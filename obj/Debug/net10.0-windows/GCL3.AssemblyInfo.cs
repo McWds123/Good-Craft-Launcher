@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GCL3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63a531027ac66902a48476dc314d868fa2c16bd8")]
 [assembly: System.Reflection.AssemblyProductAttribute("GCL3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GCL3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

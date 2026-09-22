@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GCL3.Gui.Pages;
 using GCL3.Gui.Widgets;
 
 namespace GCL3;
@@ -17,17 +18,13 @@ namespace GCL3;
 /// </summary>
 public partial class MainWindow : Window
 {
-
-    
-    
     public MainWindow()
     {
-        InitializeComponent();  
+        InitializeComponent();
         Buttons();
-        MainContent.Content = new MainWindow();
+        MainContent.Navigate(new HomePage());
     }
-    
-    
+
     public void Buttons()
     {
         // 启动游戏按钮
@@ -40,11 +37,11 @@ public partial class MainWindow : Window
         RunGame.Margin = new Thickness(10, 0, 0, 10);
         ButtonStyle.SetStyle(RunGame);
         RootGrid.Children.Add(RunGame);
-        
+
         // 导航栏
         GoTab.HorizontalAlignment = HorizontalAlignment.Center;
         GoTab.VerticalAlignment = VerticalAlignment.Bottom;
-        
+
         HomePageBtn.Margin = new Thickness(2.5, 0, 2.5, 15);
         DownloadPageBtn.Margin = new Thickness(2.5, 0, 2.5, 15);
         SettingsPageBtn.Margin = new Thickness(2.5, 0, 2.5, 15);
@@ -56,6 +53,5 @@ public partial class MainWindow : Window
         AboutPageBtn.Click += (sender, args) => ButtonCustom.GoToAboutPage(MainContent, sender, args);
 
         ButtonStyle.SetGoTabStyle(GoTab, HomePageBtn, DownloadPageBtn, SettingsPageBtn, AboutPageBtn);
-        
     }
 }

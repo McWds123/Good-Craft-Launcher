@@ -1,12 +1,12 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using GCL3.Gui.Pages;
+using GCL3;
 
 namespace GCL3.Gui.Pages;
 
-public partial class AboutPage : Page
+public partial class HomePage : Page
 {
-    public AboutPage()
+    public HomePage()
     {
         InitializeComponent();
         Buttons();
@@ -28,3 +28,4 @@ public partial class AboutPage : Page
         AboutPageBtn.Click += (sender, args) => NavigationService?.Navigate(new AboutPage());
     }
 }
+

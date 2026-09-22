@@ -6,20 +6,20 @@ namespace GCL3.Gui.Widgets;
 
 public class ButtonCustom
 {
-    public static void GoToHome(ContentControl mainContent,object sender, RoutedEventArgs e)
+    public static void GoToHome(Frame mainContent, object sender, RoutedEventArgs e)
     {
-        mainContent.Content = new MainWindow();
+        mainContent.Navigate(new HomePage());
     }
-    public static void GoToDownloadPage(ContentControl mainContent,object sender, RoutedEventArgs e)
+    public static void GoToDownloadPage(Frame mainContent, object sender, RoutedEventArgs e)
     {
-        mainContent.Content = new DownloadPage();
+        mainContent.Navigate(new DownloadPage());
     }
-    public static void GoToSettingsPage(ContentControl mainContent,object sender, RoutedEventArgs e)
+    public static void GoToSettingsPage(Frame mainContent, object sender, RoutedEventArgs e)
     {
-        mainContent.Content = new SettingsPage();
+        mainContent.Navigate(new SettingsPage());
     }
-    public static void GoToAboutPage(ContentControl mainContent,object sender, RoutedEventArgs e)
+    public static void GoToAboutPage(Frame mainContent, object sender, RoutedEventArgs e)
     {
-        mainContent.Content = new AboutPage();
+        mainContent.Navigate(new AboutPage());
     }
 }
